@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/resources/person_idle.png" afterDir="false" />
+    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_east.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_north.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_south.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_west.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_east.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_north.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_south.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_west.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rescue_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/rescue_simulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/map_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lucianocanovas"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lucianocanovas/rescue-simulator",
+    "accountId": "87f944df-94e1-4cc8-9129-fe3def345bfd"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -37,6 +52,7 @@
   "keyToString": {
     "Python.game_engine.executor": "Run",
     "Python.map_manager.executor": "Run",
+    "Python.rescue_simulator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -52,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\vehicles\truck" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\vehicles\jeep" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\resources" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\vehicles" />
@@ -74,8 +91,17 @@
       <updated>1758767404402</updated>
       <workItem from="1758848161081" duration="245000" />
       <workItem from="1758848417568" duration="2489000" />
-      <workItem from="1758851026887" duration="840000" />
+      <workItem from="1758851026887" duration="4295000" />
     </task>
+    <task id="LOCAL-00001" summary="Added jeep assets">
+      <option name="closed" value="true" />
+      <created>1758857449032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758857449032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,8 +118,13 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added jeep assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jeep assets" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rescue_simulator$map_manager.coverage" NAME="map_manager Coverage Results" MODIFIED="1758851132615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/rescue_simulator$rescue_simulator.coverage" NAME="rescue_simulator Coverage Results" MODIFIED="1758859371584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rescue_simulator$game_engine.coverage" NAME="game_engine Coverage Results" MODIFIED="1758849291787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
