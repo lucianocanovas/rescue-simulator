@@ -1,4 +1,4 @@
-class vehicle:
+class Vehicle:
     def __init__(self, capacity):
         self.position = [None, None]
         self.capacity = capacity
@@ -9,27 +9,27 @@ class vehicle:
     def download(self):
         pass
 
-    def findShortestPath(self):
+    def find_path(self):
         pass
 
-class jeep(vehicle):
+class Jeep(Vehicle):
     def __init__(self):
         super().__init__(2)
 
-class truck(vehicle):
+class Truck(Vehicle):
     def __init__(self):
         super().__init__(3)
 
-class car(vehicle):
+class Car(Vehicle):
     def __init__(self):
         super().__init__(1)
 
-class motorcicle(vehicle):
+class Motorcicle(Vehicle):
     def __init__(self):
         super().__init__(1)
 
-    def checkPerson():
+    def check_load(self):
         pass
 
-    def kamikaze():
+    def kamikaze(self):
         pass

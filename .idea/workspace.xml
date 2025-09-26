@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_east.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_north.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_south.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/blue_truck_west.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_east.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_north.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_south.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vehicles/truck/red_truck_west.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rescue_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/rescue_simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_engine.py" afterDir="false" />
-    </list>
+    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +79,7 @@
       <updated>1758767404402</updated>
       <workItem from="1758848161081" duration="245000" />
       <workItem from="1758848417568" duration="2489000" />
-      <workItem from="1758851026887" duration="4295000" />
+      <workItem from="1758851026887" duration="4805000" />
     </task>
     <task id="LOCAL-00001" summary="Added jeep assets">
       <option name="closed" value="true" />
@@ -101,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758857449032</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added jeep assets">
+      <option name="closed" value="true" />
+      <created>1758861230926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758861230926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
