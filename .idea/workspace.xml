@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
+    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added tileset">
+      <change afterPath="$PROJECT_DIR$/src/classes/Board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rescue_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/rescue_simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/map/tileset.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/board/board.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/default_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/default_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/mines.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Mines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Vehicles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/map_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\map" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\vehicles\truck" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\vehicles\jeep" />
       <recent name="C:\Users\canov\PycharmProjects\rescue-simulator\assets\resources" />
@@ -68,8 +77,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.28293.52" />
-        <option value="bundled-python-sdk-c84de207d46e-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.28293.52" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.28774.16" />
+        <option value="bundled-python-sdk-14d54ed193d7-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.28774.16" />
       </set>
     </attachedChunks>
   </component>
@@ -83,7 +92,9 @@
       <workItem from="1758848161081" duration="245000" />
       <workItem from="1758848417568" duration="2489000" />
       <workItem from="1758851026887" duration="7466000" />
-      <workItem from="1758896622080" duration="1366000" />
+      <workItem from="1758896622080" duration="1395000" />
+      <workItem from="1759005276087" duration="293000" />
+      <workItem from="1759005594002" duration="3423000" />
     </task>
     <task id="LOCAL-00001" summary="Added jeep assets">
       <option name="closed" value="true" />
@@ -117,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758861551931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added tileset">
+      <option name="closed" value="true" />
+      <created>1758901056461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758901056461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added jeep assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jeep assets" />
+    <MESSAGE value="Added tileset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tileset" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rescue_simulator$map_manager.coverage" NAME="map_manager Coverage Results" MODIFIED="1758851132615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
