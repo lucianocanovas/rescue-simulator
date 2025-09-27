@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rescue_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/rescue_simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vehicles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
