@@ -33,3 +33,9 @@ class MapManager:
             y = random.randint(0, self.height - 1)
             if self.board[x][y] == 0:
                 return x, y
+
+    def get_position(self):
+        pass
+
+    def is_safe(self):
+        pass
