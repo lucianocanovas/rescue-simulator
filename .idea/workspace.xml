@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added tileset">
       <change afterPath="$PROJECT_DIR$/src/classes/Board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -15,6 +16,10 @@
       <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Vehicles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/map_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization.py" afterDir="false" />
+=======
+    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
+      <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vehicles.py" afterDir="false" />
+>>>>>>> 86b3740d4c61f1e971b3d78bb831e1f6a50361fa
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
