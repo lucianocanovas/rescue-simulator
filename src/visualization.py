@@ -2,7 +2,7 @@ from pathlib import Path
 import pygame
 
 
-def load_sprite(path, frame_width, frame_height, rows, columns):
+def load_sprite(path,   frame_width, frame_height, rows, columns):
     path = Path(path).resolve()
     if not path.is_file():
         raise FileNotFoundError(f"No se encontró el archivo: {path}")

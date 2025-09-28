@@ -1,30 +1,27 @@
-from src.map_manager import MapManager
-from src.classes.Player import Player
+import pygame
+import sys
 
-def player_list():
-    players = []
-    player1 = Player()
-    player2 = Player()
-    return [player1, player2]
+# Initialize Pygame
+pygame.init()
 
+# Window dimensions
+WIDTH, HEIGHT = 700, 500
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Rescue Simulator")
 
-class GameEngine:
-    def __init__(self, fps=60):
-        self.board = MapManager
-        self.players = player_list()
-        self.fps = fps
+# Clock for controlling frame rate
+clock = pygame.time.Clock()
 
-    def start(self):
-        pass
+# Main game loop
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
 
-    def update(self):
-        pass
+    # Fill the screen with a color
+    screen.fill((135, 206, 235))
 
-    def check_collisions(self):
-        pass
-
-    def calculate_points(self):
-        pass
-
-    def end(self):
-        pass
+    # Update the display
+    pygame.display.flip()
+    clock.tick(60),
