@@ -1,4 +1,4 @@
-from src.classes.Player import Player
+from src.classes.Player import (Player)
 
 class Strategy:
 

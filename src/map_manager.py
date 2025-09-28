@@ -1,4 +1,6 @@
 import random
+from src.classes import Vehicles
+from src.classes import Items
 
 class MapManager:
     def __init__(self, width = 50, height = 50):
@@ -6,6 +8,7 @@ class MapManager:
         self.height = height
         self.board = [[0 for column in range(width)] for row in range(height)]
         self.items = []
+        self.people = []
         self.mines = []
         self.vehicles = []
 
@@ -15,7 +18,8 @@ class MapManager:
         for i in range(10):
             x, y = self.random_empty_position()
             self.board[x][y] = "person"
-            self.items.append([x, y])
+            person = Items.Person((x, y))
+            self.people.append(person)
 
         for i in range(50):
             x, y = self.random_empty_position()
@@ -26,6 +30,13 @@ class MapManager:
             x, y = self.random_empty_position()
             self.board[x][y] = "mine"
             self.mines.append([x, y])
+
+        """-----------------------------------------------------------------------------------------------"""
+        # Bloque de prueba
+        vehicle = Vehicles.Car(0, 0)
+        self.vehicles.append(vehicle)
+
+        """-----------------------------------------------------------------------------------------------"""
 
     def random_empty_position(self):
         while True:
