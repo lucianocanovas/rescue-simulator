@@ -5,7 +5,7 @@ import sys
 pygame.init()
 
 # Window dimensions
-WIDTH, HEIGHT = 700, 500
+WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Rescue Simulator")
 
@@ -20,7 +20,7 @@ while True:
             sys.exit()
 
     # Fill the screen with a color
-    screen.fill((135, 206, 235))
+    screen.fill((13|5, 206, 235))
 
     # Update the display
     pygame.display.flip()
