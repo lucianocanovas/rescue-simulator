@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added tileset">
       <change afterPath="$PROJECT_DIR$/src/classes/Board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -20,6 +21,13 @@
     <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Added jeep assets">
       <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vehicles.py" afterDir="false" />
 >>>>>>> 86b3740d4c61f1e971b3d78bb831e1f6a50361fa
+=======
+    <list default="true" id="60c36b20-2935-464e-82b4-a41d0da7488b" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rescue-simulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rescue-simulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vehicles.py" afterDir="false" />
+>>>>>>> e3a96ae2b68025510a93fe6936cb7cf677042790
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +64,18 @@
   &quot;keyToString&quot;: {
     &quot;Python.game_engine.executor&quot;: &quot;Run&quot;,
     &quot;Python.map_manager.executor&quot;: &quot;Run&quot;,
+<<<<<<< HEAD
     &quot;Python.rescue_simulator.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+=======
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mateo&quot;,
+>>>>>>> e3a96ae2b68025510a93fe6936cb7cf677042790
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -82,8 +97,13 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+<<<<<<< HEAD
         <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.28774.16" />
         <option value="bundled-python-sdk-14d54ed193d7-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.28774.16" />
+=======
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-PY-252.26199.168" />
+        <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
+>>>>>>> e3a96ae2b68025510a93fe6936cb7cf677042790
       </set>
     </attachedChunks>
   </component>
@@ -96,10 +116,16 @@
       <updated>1758767404402</updated>
       <workItem from="1758848161081" duration="245000" />
       <workItem from="1758848417568" duration="2489000" />
+<<<<<<< HEAD
       <workItem from="1758851026887" duration="7466000" />
       <workItem from="1758896622080" duration="1395000" />
       <workItem from="1759005276087" duration="293000" />
       <workItem from="1759005594002" duration="3423000" />
+=======
+      <workItem from="1758851026887" duration="840000" />
+      <workItem from="1759005793561" duration="1572000" />
+      <workItem from="1759007431668" duration="1040000" />
+>>>>>>> e3a96ae2b68025510a93fe6936cb7cf677042790
     </task>
     <task id="LOCAL-00001" summary="Added jeep assets">
       <option name="closed" value="true" />
