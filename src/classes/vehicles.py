@@ -7,8 +7,8 @@ class Vehicle:
     pygame.init()
     def __init__(self, x, y, capacity, direction : str =  "", base = None, sprite_path = "assets/vehicles/jeep/blue_jeep_east.png"):
         path = Path("assets/vehicles/jeep/blue_jeep_east.png")
-        sheet = pygame.image.load(str(path)) #Carga la imagen y la convierte en un objeto de superficie de Pygame
-        sheet_width, sheet_height = sheet.get_size() #get_size -> (tupla) devuelve el ancho y alto de la imagen cargada
+        sheet = pygame.image.load(str(path))
+        sheet_width, sheet_height = sheet.get_size()
         self.position = [x,y]
         self.strategy = Strategy
         self.active = True
@@ -18,12 +18,12 @@ class Vehicle:
         self.direction = direction
         self.base = base
         self.sprites = load_sprite(sprite_path, sheet_width // 4, sheet_height // 3, 3, 4)
-        self.current_sprite = self.sprites[0][0]  #selecciona el sprite inicial.
+        self.current_sprite = self.sprites[0][0]
 
     def move(self,direction):
 
         x,y = self.position
-        #En esta funcion se deberia actualizar tambien el cambio de sprite si es que se mueve para algun lado.
+
         if direction == "left" :
             self.position = [x-1,y]
         elif  direction == "right" :
