@@ -3,7 +3,7 @@ from src.classes import Vehicles
 from src.classes import Items
 
 class MapManager:
-    def __init__(self, width = 50, height = 50):
+    def __init__(self, width = 40, height = 40):
         self.width = width
         self.height = height
         self.board = [[0 for _ in range(width)] for _ in range(height)] #una matriz de height filas y width columnas llena de ceros. Doble bucle.
@@ -22,7 +22,7 @@ class MapManager:
 
         for _ in range(50): #Instancia 50 mercancias (a modificar)
             x, y = self.random_empty_position()
-            self.board[x][y] = "mine" #Mercancia deberia ser*
+            self.board[x][y] = "supply" #Mercancia deberia ser*
             self.items.append([x, y])
 
         for _ in range(15): #Instancia las minas. No deberia ser un bucle, deberia hacerse una por una.
