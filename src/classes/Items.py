@@ -17,7 +17,18 @@ class Person (Item):
     def __init__(self, position, sprite_path = "assets/resources/person_idle.png"):
         super().__init__(50, position, sprite_path)
 
-class Supply (Item):
-    def __init__(self, value, position, sup_type : str, sprite_path):
-        super().__init__(value, position, sprite_path)
-        self.sup_type = sup_type
+class Medkit (Item):
+    def __init__(self, position, sprite_path = "assets/resources/medkit.png"):
+        super().__init__(20, position, sprite_path)
+
+class Clothes (Item):
+    def __init__(self, position, sprite_path = "assets/resources/clothes.png"):
+        super().__init__(5, position, sprite_path)
+
+class Food (Item):
+    def __init__(self, position, sprite_path = "assets/resources/food.png"):
+        super().__init__(10, position, sprite_path)
+
+class Weapons (Item):
+    def __init__(self, position, sprite_path = "assets/resources/weapon.png"):
+        super().__init__(50, position, sprite_path)

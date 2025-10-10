@@ -9,7 +9,7 @@ class Mine:
 
 class MineG2(Mine):
     def __init__(self, x, y):
-        super().__init__(x, y, 7, 7)
+        super().__init__(x, y, 7, 7,sprite_path="assets/resources/mine.png")
 
     def teleport(self):
         pass

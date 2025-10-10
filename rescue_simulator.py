@@ -3,38 +3,37 @@ import sys
 from src.map_manager import *
 
 def draw_board(screen, manager : MapManager, cell_size):
+    
     for x, row in enumerate(manager.board):
         for y, cell in enumerate(row):
             rect = pygame.Rect(y * cell_size, x * cell_size, cell_size, cell_size) #Pygame necesita coordenadas en píxeles
             #Cada celda del tablero mide cell_size × cell_size píxeles.
 
             if cell == 0:  # Si la celda esta vacia, la pinta de gris.
-                color = (200, 200, 200)
+                color = (255, 255, 255)
+                pygame.draw.rect(screen, color, rect) #Cada vez que se instancia un color para una posicion de celda, se debe poner+
+                #pygame.draw.rect y el color, sino se agarra el ultimo valor
             
             elif cell == "person":
-                sprite = manager.people[0].current_sprite
-                sw, sh = sprite.get_size()
-                scale_w = cell_size
-                scale_h = cell_size
-                sprite_s = pygame.transform.scale(sprite, (scale_w, scale_h))
-                # centrar: posición = topleft de la celda + offset
-                offset_x = (cell_size - scale_w) // 2
-                offset_y = (cell_size - scale_h) // 2
-                screen.blit(sprite_s, (y * cell_size + offset_x, x * cell_size + offset_y))
+                generalice_adjustement(manager.people,cell_size,screen,x,y)
 
             elif cell == "mine":
-                sprite = manager.mines[0].current_sprite
-                sw, sh = sprite.get_size()
-                sprite_s = pygame.transform.scale(sprite, (cell_size, cell_size))
-                offset_x = (cell_size - cell_size) // 2
-                offset_y = (cell_size - cell_size) // 2
-                screen.blit(sprite_s, (y * cell_size + offset_x, x * cell_size + offset_y))
+                generalice_adjustement(manager.mines,cell_size,screen,x,y)
             
-            elif cell == "supply": #Si hay una mercancia, pinta la celda de azul
-                color = (0, 0, 200)
+            elif cell == "medkit": 
+                generalice_adjustement(manager.medkit,cell_size,screen,x,y)
+            
+            elif cell == "weapon": 
+                generalice_adjustement(manager.weapons,cell_size,screen,x,y)
+            
+            elif cell == "clothes": 
+                generalice_adjustement(manager.clothes,cell_size,screen,x,y)   
+            
+            elif cell == "food": 
+                generalice_adjustement(manager.food,cell_size,screen,x,y)
             
             else:
-                color = (50, 50, 50)
+                color = (255, 255, 255)
                 pygame.draw.rect(screen, color, rect)
             
             pygame.draw.rect(screen, (0, 0, 0), rect, 1)  # Dibuja el borde de cada celda
@@ -44,6 +43,18 @@ def draw_board(screen, manager : MapManager, cell_size):
         sprite = vehicle.current_sprite
         sprite_s = pygame.transform.scale(sprite, (cell_size, cell_size))
         screen.blit(sprite_s, (x * cell_size, y * cell_size))
+
+def generalice_adjustement(object,cell_size,screen,x,y):
+        sprite = object[0].current_sprite
+        scale_w = cell_size
+        scale_h = cell_size
+        sprite_s = pygame.transform.scale(sprite, (scale_w, scale_h))
+        sprite_s = pygame.transform.scale(sprite, (scale_w, scale_h))
+        # centrar: posición = topleft de la celda + offset
+        offset_x = (cell_size - scale_w) // 2
+        offset_y = (cell_size - scale_h) // 2
+        screen.blit(sprite_s, (y * cell_size + offset_x, x * cell_size + offset_y))
+        return
 
 def main():
     ppl_cycle_count = 0
@@ -58,7 +69,7 @@ def main():
     cols, rows = manager.width, manager.height
     cell_w = screen_w // cols
     cell_h = screen_h // rows
-    cell_size = max(4, min(cell_w-1, cell_h-1))  # Evita valores muy chicos
+    cell_size = max(4, min(cell_w-2, cell_h-2))  # Evita valores muy chicos
 
     # Crear ventana con tamaño ajustado
     screen = pygame.display.set_mode((cols * cell_size, rows * cell_size))

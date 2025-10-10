@@ -13,7 +13,10 @@ class MapManager:
         self.width = width
         self.height = height
         self.board = [[0 for _ in range(height)] for _ in range(width)] #una matriz de height filas y width columnas llena de ceros. Doble bucle.
-        self.items = []
+        self.medkit = [] #Luego separar en listas de cada item
+        self.clothes = []
+        self.food = []
+        self.weapons = []
         self.people = []
         self.mines = []
         self.vehicles = []
@@ -26,29 +29,45 @@ class MapManager:
             person = Items.Person((x, y))
             self.people.append(person)
 
-        for _ in range(50): #Instancia 50 mercancias (a modificar)
-            x, y = self.random_empty_position()
-            self.board[x][y] = "supply" #Mercancia deberia ser*
-            # Create a Supply item and store the object so it has sprites and position
-            try:
-                supply = Items.Supply(10, (x, y), "generic", "assets/resources/supply.png")
-            except Exception:
-                # Fall back to a simple positional record if Item constructor is unavailable
-                supply = (x, y)
-            self.items.append(supply)
+        random_quantity = 50
+        x = random.randint(1, random_quantity)
 
-        for _ in range(15): #Instancia las minas.
-            x, y = self.random_empty_position()
-            self.board[x][y] = Mines.Mine(x, y, 5, 5, "assets/resources/mine.png")
-            # Create a Mine object so drawing code can access current_sprite
-            try:
-                mine = Mines.Mine(x, y, 3, 3)
-            except Exception:
-                # If Mine signature changed, try MineG2
-                try:
-                    mine = Mines.MineG2(x, y)
-                except Exception:
-                    mine = (x, y)
+        for _ in range (x):
+            x, y = self.random_empty_position()  # x=col, y=row
+            self.board[x][y] = "medkit"
+            supply = Items.Medkit((x, y))
+            self.medkit.append(supply) #Para probar la aparicion de items
+
+        random_quantity -= x 
+        x = random.randint(1, random_quantity)
+
+        for _ in range (x):
+            x, y = self.random_empty_position()  # x=col, y=row
+            self.board[x][y] = "weapon"
+            weapon = Items.Weapons((x, y))
+            self.weapons.append(weapon) #Para probar la aparicion de items
+
+        random_quantity -= x 
+        x = random.randint(1, random_quantity)
+
+        for _ in range (x):
+            x, y = self.random_empty_position()  # x=col, y=row
+            self.board[x][y] = "food"
+            food = Items.Food((x, y))
+            self.food.append(food) #Para probar la aparicion de items
+
+        random_quantity -= x 
+
+        for _ in range (x):
+            x, y = self.random_empty_position()  # x=col, y=row
+            self.board[x][y] = "clothes"
+            clothes = Items.Clothes((x, y))
+            self.clothes.append(clothes) #Para probar la aparicion de items
+
+        for _ in range(15): #Instancia 15 personas aleatoriamente
+            x, y = self.random_empty_position()  
+            self.board[x][y] = "mine"
+            mine = Mines.MineG2(x, y)
             self.mines.append(mine)
 
         printMatrix(self.board)
