@@ -30,39 +30,41 @@ class MapManager:
             self.people.append(person)
 
         random_quantity = 50
-        x = random.randint(1, random_quantity)
+       # Genera cantidades aleatorias para las primeras tres clases
+        medkit_count = random.randint(1, random_quantity - 3)  # Deja espacio para las otras 3 clases
+        random_quantity -= medkit_count
+        weapon_count = random.randint(1, random_quantity - 2)  # Deja espacio para las otras 2 clases
+        random_quantity -= weapon_count
+        food_count = random.randint(1, random_quantity - 1)    # Deja espacio para la última clase
+        clothes_count = random_quantity                        # El resto para clothes
 
-        for _ in range (x):
-            x, y = self.random_empty_position()  # x=col, y=row
+        # Coloca los medkits
+        for _ in range(medkit_count):
+            x, y = self.random_empty_position()
             self.board[x][y] = "medkit"
             supply = Items.Medkit((x, y))
-            self.medkit.append(supply) #Para probar la aparicion de items
+            self.medkit.append(supply)
 
-        random_quantity -= x 
-        x = random.randint(1, random_quantity)
-
-        for _ in range (x):
-            x, y = self.random_empty_position()  # x=col, y=row
+        # Coloca las armas
+        for _ in range(weapon_count):
+            x, y = self.random_empty_position()
             self.board[x][y] = "weapon"
             weapon = Items.Weapons((x, y))
-            self.weapons.append(weapon) #Para probar la aparicion de items
+            self.weapons.append(weapon)
 
-        random_quantity -= x 
-        x = random.randint(1, random_quantity)
-
-        for _ in range (x):
-            x, y = self.random_empty_position()  # x=col, y=row
+        # Coloca la comida
+        for _ in range(food_count):
+            x, y = self.random_empty_position()
             self.board[x][y] = "food"
             food = Items.Food((x, y))
-            self.food.append(food) #Para probar la aparicion de items
+            self.food.append(food)
 
-        random_quantity -= x 
-
-        for _ in range (x):
-            x, y = self.random_empty_position()  # x=col, y=row
+        # Coloca la ropa
+        for _ in range(clothes_count):
+            x, y = self.random_empty_position()
             self.board[x][y] = "clothes"
             clothes = Items.Clothes((x, y))
-            self.clothes.append(clothes) #Para probar la aparicion de items
+            self.clothes.append(clothes)
 
         for _ in range(15): #Instancia 15 personas aleatoriamente
             x, y = self.random_empty_position()  

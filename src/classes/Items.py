@@ -13,7 +13,7 @@ class Item :
         # Try to create a standard 1x6 sprite matrix. Some sheets are single-frame;
         # normalize them so code can index sprites[0][frame_index] safely.
         try:
-            frames = load_sprite(sprite_path, sheet_width // 6, sheet_height // 1, 1, 6)
+            frames = load_sprite(sprite_path, sheet_width, sheet_height, 1, 6)
         except Exception:
             # If the standard split failed (for single-frame images), load as single frame
             single = sheet.subsurface(pygame.Rect(0, 0, sheet_width, sheet_height)).copy()
