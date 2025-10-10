@@ -1,6 +1,7 @@
 import random
 from src.classes import Vehicles
 from src.classes import Items
+from src.classes import Mines
 
 def printMatrix(matrix):
     print("Current Map State:")
@@ -28,12 +29,27 @@ class MapManager:
         for _ in range(50): #Instancia 50 mercancias (a modificar)
             x, y = self.random_empty_position()
             self.board[x][y] = "supply" #Mercancia deberia ser*
-            self.items.append([x, y])
+            # Create a Supply item and store the object so it has sprites and position
+            try:
+                supply = Items.Supply(10, (x, y), "generic", "assets/resources/supply.png")
+            except Exception:
+                # Fall back to a simple positional record if Item constructor is unavailable
+                supply = (x, y)
+            self.items.append(supply)
 
-        for _ in range(15): #Instancia las minas. No deberia ser un bucle, deberia hacerse una por una.
+        for _ in range(15): #Instancia las minas.
             x, y = self.random_empty_position()
-            self.board[x][y] = "mine"
-            self.mines.append([x, y])
+            self.board[x][y] = Mines.Mine(x, y, 5, 5, "assets/resources/mine.png")
+            # Create a Mine object so drawing code can access current_sprite
+            try:
+                mine = Mine(x, y, 3, 3)
+            except Exception:
+                # If Mine signature changed, try MineG2
+                try:
+                    mine = MineG2(x, y)
+                except Exception:
+                    mine = (x, y)
+            self.mines.append(mine)
 
         printMatrix(self.board)
         """-----------------------------------------------------------------------------------------------"""
