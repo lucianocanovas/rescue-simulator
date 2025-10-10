@@ -15,6 +15,8 @@ def draw_board(screen, manager : MapManager):
                 screen.blit(manager.people[0].current_sprite, (x * cell_size, y * cell_size))
             elif cell == "mine": #Si hay una mina, pinta la celda de rojo
                 color = (200, 0, 0)
+            elif cell == "supply": #Si hay una mercancia, pinta la celda de azul
+                color = (0, 0, 200)
             else:
                 color = (50, 50, 50)
 
