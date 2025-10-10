@@ -21,8 +21,7 @@ def load_sprite(path,   frame_width, frame_height, rows, columns):
 
             # Validate rectangle is within sheet bounds
             if x + frame_width <= sheet_width and y + frame_height <= sheet_height:
-                frame = sheet.subsurface(rect)
-                frame = pygame.transform.scale(frame, (20, 20)) #Escala cada sprite a 20x20 píxeles para mantener un tamaño uniforme en pantalla.
+                frame = sheet.subsurface(rect).copy() #No se escala aqui como antes, sino segun el cell size
                 row_frames.append(frame)
             else:
                 raise ValueError(
