@@ -10,7 +10,29 @@ class Item :
         sheet_width, sheet_height = sheet.get_size()
         self.value = value
         self.position = position
-        self.sprites = load_sprite(sprite_path, sheet_width // 6, sheet_height // 1, 1, 6)
+        # Try to create a standard 1x6 sprite matrix. Some sheets are single-frame;
+        # normalize them so code can index sprites[0][frame_index] safely.
+        try:
+            frames = load_sprite(sprite_path, sheet_width // 6, sheet_height // 1, 1, 6)
+        except Exception:
+            # If the standard split failed (for single-frame images), load as single frame
+            single = sheet.subsurface(pygame.Rect(0, 0, sheet_width, sheet_height)).copy()
+            # build a 1x6 frame list by duplicating the single frame
+            frames = [[single for _ in range(6)]]
+
+        # Ensure the outer structure is rows -> columns and rows>=1 and columns>=6
+        if len(frames) == 0:
+            # fallback: create a 1x6 grid with blank surface
+            blank = pygame.Surface((sheet_width, sheet_height), pygame.SRCALPHA)
+            frames = [[blank for _ in range(6)]]
+        elif len(frames[0]) < 6:
+            # duplicate frames to reach 6 columns
+            row = frames[0]
+            while len(row) < 6:
+                row.append(row[-1])
+            frames[0] = row
+
+        self.sprites = frames
         self.current_sprite = self.sprites[0][0]
         
 class Person (Item):
